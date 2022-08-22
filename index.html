@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html> 
+
+<head> 
+<title>  My first website. </title>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+</head> 
+
+<body>  
+ <!--   
+
+<h1 style="font-family:Cambria;">This is the main <span style="color: brown">heading</span></h1>  
+
+<h2 style="font-family:Cambria;">This is a <span style="color: brown">subheading</span></h2>
+<p style="font-family:Cambria;">Here's a sentence!</p>
+
+<p style="font-family:Cambria;">Here's another sentence.<br>that continues onto the next line!</p>
+
+ -->
+
+<img src="img/Cooking.jpg" width="250" height="200"/>
+
+<body style="background-color:rgb(237, 212, 182);"></body>
+
+<img id="donut_01" src= "img/donut_icons/donut_01.png" width="200" height="200"> 
+<img id="donut_02" src= "img/donut_icons/donut_02.png" width="200" height="200"> 
+<img id="donut_03" src= "img/donut_icons/donut_03.png" width="200" height="200"> 
+
+<script>
+    var sound1 = new buzz.sound("sound/glitch1.mp3");
+    var sound2 = new buzz.sound("sound/glitch2.mp3");
+    var sound3 = new buzz.sound("sound/glitch3.mp3");
+
+window.onload = function() {
+    document.getElementById('donut_01').addEventListener('click',function () {sound1.play(); });
+    document.getElementById('donut_02').addEventListener('click',function () {sound2.play(); });
+    document.getElementById('donut_03').addEventListener('click',function () {sound3.play(); });
+    
+};
+</script>
+</body> 
+
+</html>
